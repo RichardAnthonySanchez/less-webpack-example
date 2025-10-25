@@ -1,60 +1,44 @@
-# webpack-template
+# LESS + Webpack: Yacht Booking Mock Up
 
-A simple Webpack starter template for generating and processing dynamic content with separate configurations for **development** and **production**.
+Simple one-page mock site to demonstrate using **LESS** with **Webpack**.
+This repository is a front-end build demo only — no backend or live booking functionality.
 
-## Features 🚀
+## Overview
 
-- **[HTML Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)** – Templating support for generating dynamic HTML files.
-- **Asset, CSV, and XML Loaders** – Load and manage CSS, images, and structured data directly in your project.
-- **[Webpack Dev Server](https://webpack.js.org/configuration/dev-server/)** – Watch files and apply changes in real-time _without manually refreshing_ the browser.
-- **[Webpack Merge](https://github.com/survivejs/webpack-merge)** – Maintain separate configs for `development`, `production`, and `common` builds.
+A small landing page mock (hero, featured yachts, booking form) built to show a clean LESS + Webpack setup and modular styling practices.
 
-## Project Structure 📂
+## Tech
 
-```
-├── webpack.common.js   # Shared configuration
-├── webpack.dev.js      # Development config
-├── webpack.prod.js     # Production config
-├── package.json
-├── /src
-│   ├── index.js        # Entry point
-│   └── index.html      # Template file
-└── /dist               # Bundled output (generated)
-```
+- Webpack 5 (split configs: `webpack.dev.js` & `webpack.prod.js`)
+- LESS (with `less-loader`)
 
-## Scripts 📜
+## Install (local)
 
 ```bash
-# Start development server
-npm start
+# install dependencies (run once)
+npm install
+```
 
-# Build for production
+## Development
+
+```bash
+# start dev server (opens browser)
+npm run start
+```
+
+This runs `webpack serve --open --config webpack.dev.js` as defined in `package.json`.
+
+## Production build
+
+```bash
+# build optimized output
 npm run build
 ```
 
-## Getting Started ⚡
+This runs `webpack --config webpack.prod.js` and outputs to your configured `dist` folder.
 
-1. Clone this repository:
+## Notes for reviewers
 
-   ```bash
-   git clone <your-repo-url>
-   cd <your-repo-folder>
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Run the dev server:
-
-   ```bash
-   npm start
-   ```
-
-4. Build for production:
-
-   ```bash
-   npm run build
-   ```
+- Purpose: **tooling & styling demonstration** — intended to show familiarity with LESS and bundling with Webpack.
+- This is a mock front end only; no booking back end is included.
+- File structure is intentionally flexible — can provide a recommended layout on request.
