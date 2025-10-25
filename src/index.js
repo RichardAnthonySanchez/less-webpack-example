@@ -5,11 +5,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 function component() {
-  const element = document.createElement("div");
-
-  element.innerHTML = "hello world!";
-
-  return element;
+  // do stuff
 }
 
 document.body.appendChild(component());
