@@ -1,3 +1,29 @@
+// Responsive Behavior
+@screen-sm: ~"(min-width: 640px)";
+@screen-md: ~"(min-width: 768px)";
+@screen-lg: ~"(min-width: 1024px)";
+@screen-xl: ~"(min-width: 1280px)";
+@screen-2xl: ~"(min-width: 1536px)";
+
+// Numeric versions for max-width calculations
+@screen-sm-px: 640;
+@screen-md-px: 768;
+@screen-lg-px: 1024;
+@screen-xl-px: 1280;
+@screen-2xl-px: 1536;
+
+// Max-width queries (computed)
+@screen-max-sm: ~"@{screen-sm-px - 1}px";
+@screen-max-md: ~"@{screen-md-px - 1}px";
+@screen-max-lg: ~"@{screen-lg-px - 1}px";
+@screen-max-xl: ~"@{screen-xl-px - 1}px";
+@screen-max-2xl: ~"@{screen-2xl-px - 1}px";
+
+// Hidden elements
+.hidden {
+  display: none;
+}
+
 // Core colors
 @white: #ffffff;
 @black: #000000;

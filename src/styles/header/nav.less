@@ -1,0 +1,129 @@
+@import "./mobile-menu.less";
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+
+  > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  button,
+  a {
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  * svg,
+  * img {
+    font-size: 2rem;
+    max-height: 100%;
+    width: auto;
+  }
+
+  @media @screen-lg {
+    .hamburger {
+      display: none;
+    }
+  }
+}
+
+.nav-items {
+  display: none;
+
+  > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  li {
+    text-transform: uppercase;
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .has-sub-menu {
+    position: relative;
+
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      flex-direction: column;
+      background: @white;
+      padding: 0.5rem 0;
+      border: solid 1px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li:hover {
+          background-color: fade(@primary, 50%);
+        }
+      }
+    }
+
+    li {
+      text-transform: uppercase;
+      list-style: none;
+      a {
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: block;
+        color: inherit;
+      }
+    }
+
+    &:hover .sub-menu {
+      display: flex;
+    }
+  }
+
+  @media @screen-lg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media @screen-lg {
+  .nav-items {
+    display: flex;
+    flex: 1;
+    > ul {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+}

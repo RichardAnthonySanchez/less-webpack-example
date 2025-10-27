@@ -1,9 +1,45 @@
 @import "variables.less";
 @import "fonts.less";
+@import "404.less";
+@import "header/nav.less";
 
 body {
   background-color: @gray-pale;
   color: @black;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 100%;
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
+  font-family: system-ui, sans-serif;
+
+  @media @screen-sm {
+    padding: 1.25rem;
+  }
+
+  @media @screen-md {
+    padding: 1rem;
+    max-width: 720px;
+  }
+
+  @media @screen-lg {
+    padding: 1rem;
+    max-width: 720px;
+  }
+
+  @media @screen-xl {
+    padding: 1rem;
+    max-width: 720px;
+  }
+
+  @media @screen-2xl {
+    padding: 1rem;
+    max-width: 720px;
+  }
 }
 
 .button-primary {
