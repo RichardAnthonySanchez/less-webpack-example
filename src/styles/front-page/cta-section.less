@@ -1,0 +1,38 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: @primary;
+  height: 100vh;
+  padding: 2rem;
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media @screen-lg {
+      display: flex;
+      flex-direction: row;
+    }
+    .cta-image {
+      margin: 4rem;
+      svg {
+        font-size: 10rem;
+        @media @screen-md {
+          font-size: 20rem;
+        }
+      }
+    }
+    .cta-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      a {
+        text-align: center;
+      }
+      @media @screen-lg {
+        width: 750px;
+      }
+    }
+  }
+}
