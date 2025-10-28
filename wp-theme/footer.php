@@ -1,6 +1,8 @@
-  <footer>
-    <p>&copy; <?php echo date('Y'); ?> My Theme</p>
+<footer id="site-footer" class="site-footer" style="--footer-overlay: url('<?php echo get_template_directory_uri(); ?>/assets/imgs/footer-watermark.svg')">
+
+    <?php get_template_part('template-parts/footer', 'main'); ?>
+
     <?php wp_footer(); ?>
-  </footer>
+</footer>
 </body>
 </html>

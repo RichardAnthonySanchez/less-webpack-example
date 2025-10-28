@@ -7,9 +7,6 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="site-header">
-    <div class="container">
-        <?php get_template_part('template-parts/nav'); ?>
-        <?php get_template_part('template-parts/mobile-menu'); ?>
-
-    </div>
+  <?php get_template_part('template-parts/nav'); ?>
+  <?php get_template_part('template-parts/mobile-menu'); ?>
 </header>
