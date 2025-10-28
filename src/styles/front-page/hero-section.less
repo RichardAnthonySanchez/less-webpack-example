@@ -1,0 +1,25 @@
+@import "../variables.less";
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darken(@primary, 50%);
+  color: @white !important;
+  height: 100vh;
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    .hero-buttons {
+      display: flex;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}

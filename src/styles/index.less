@@ -3,6 +3,8 @@
 @import "404.less";
 @import "header/nav.less";
 @import "footer/footer-main.less";
+@import "front-page/hero-section.less";
+@import "front-page/features-section.less";
 
 body {
   background-color: @gray-pale;
@@ -11,28 +13,49 @@ body {
 
 body {
   margin: 0 auto;
-  padding: 1rem;
   max-width: 100%;
-  background: #fff;
-  color: #111;
+  background: @white;
+  color: @black;
   line-height: 1.6;
   font-family: system-ui, sans-serif;
 }
 
 .button-primary {
-  background: @primary;
-  color: @white;
+  background: @black;
+  color: @primary;
+  border: solid 1px @primary;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: @primary;
+    color: @black;
+    border: solid 1px @black;
+  }
 }
 
 .button-secondary {
-  background: @secondary;
+  background: @black;
   color: @white;
+  border: solid 1px @white;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: @primary;
+    color: @black;
+    border: solid 1px @black;
+  }
 }
 
 body {
   font-family: @font-body;
   font-weight: 400;
-  color: #222;
+  color: @black;
   line-height: 1.6;
 }
 
@@ -56,7 +79,7 @@ h6 {
 }
 
 .font-demo {
-  border: 1px solid #ccc;
+  border: 1px solid @white;
   border-radius: 8px;
   padding: 1rem;
 }

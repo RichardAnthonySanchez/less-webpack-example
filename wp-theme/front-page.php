@@ -2,31 +2,10 @@
 
 <main class="front-page">
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Your Catchy Headline</h1>
-            <p>Your subheadline goes here</p>
-            <a href="#cta" class="btn-primary">Get Started</a>
-        </div>
-    </section>
+    <?php get_template_part('template-parts/hero-section'); ?>
 
     <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="feature">
-                <h2>Feature 1</h2>
-                <p>Short description of the feature.</p>
-            </div>
-            <div class="feature">
-                <h2>Feature 2</h2>
-                <p>Short description of the feature.</p>
-            </div>
-            <div class="feature">
-                <h2>Feature 3</h2>
-                <p>Short description of the feature.</p>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part('template-parts/features-section'); ?>
 
     <!-- CTA Section -->
     <section class="cta" id="cta">
