@@ -1,5 +1,8 @@
+const fs = require("fs");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const html = fs.readFileSync("./.tmp/wp.html", "utf-8");
 
 module.exports = {
   entry: {
@@ -7,7 +10,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html",
+      filename: "index.html",
+      templateContent: ({ htmlWebpackPlugin }) => html,
     }),
   ],
   output: {
